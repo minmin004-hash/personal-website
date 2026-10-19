@@ -1,0 +1,297 @@
+media:
+  input: assets
+  output: assets
+  extensions:
+  - png
+  - jpg
+  - jpeg
+  - webp
+  - pdf
+content:
+- name: website
+  label: Nội dung website
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: profile
+    label: Thông tin cá nhân & CV
+    type: object
+    fields:
+    - name: name
+      label: Họ tên
+      type: string
+      required: true
+    - name: role
+      label: Chức danh
+      type: string
+      required: true
+    - name: tagline
+      label: Câu giới thiệu
+      type: text
+      required: true
+    - name: description
+      label: Mô tả
+      type: text
+      required: true
+    - name: university
+      label: Trường / cơ quan
+      type: string
+      required: true
+    - name: location
+      label: Địa điểm
+      type: string
+      required: true
+    - name: portrait
+      label: Ảnh chân dung
+      type: image
+      required: true
+      options:
+        extensions:
+        - png
+        - jpg
+        - jpeg
+        - webp
+    - name: portraitCaption
+      label: Chú thích ảnh
+      type: text
+      required: true
+    - name: portraitNote
+      label: Ghi chú bên dưới ảnh
+      type: text
+      required: true
+    - name: cv
+      label: Tệp CV
+      type: file
+      required: true
+      options:
+        extensions:
+        - pdf
+  - name: about
+    label: Giới thiệu
+    type: object
+    fields:
+    - name: lead
+      label: Đoạn mở đầu
+      type: text
+      required: true
+    - name: paragraphs
+      label: Các đoạn giới thiệu
+      type: text
+      list: true
+    - name: tags
+      label: Từ khóa
+      type: string
+      list: true
+  - name: research
+    label: Hướng nghiên cứu
+    type: object
+    list:
+      min: 0
+      max: 200
+      collapsible:
+        collapsed: true
+        summary: '{fields.title}'
+    fields:
+    - name: title
+      label: Tiêu đề
+      type: string
+      required: true
+    - name: description
+      label: Mô tả
+      type: text
+      required: true
+    - name: label
+      label: Nhãn hiển thị
+      type: string
+      required: true
+  - name: project
+    label: Dự án nổi bật
+    type: object
+    fields:
+    - name: label
+      label: Nhãn hiển thị
+      type: string
+      required: true
+    - name: title
+      label: Tiêu đề
+      type: string
+      required: true
+    - name: description
+      label: Mô tả
+      type: text
+      required: true
+    - name: url
+      label: Đường dẫn chính thức / DOI (HTTPS)
+      type: string
+      required: false
+      pattern:
+        regex: ^(?:https://[^\s<>"\\]+)?$
+        message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
+  - name: publications
+    label: Công bố khoa học
+    type: object
+    list:
+      min: 0
+      max: 200
+      collapsible:
+        collapsed: true
+        summary: '{fields.title}'
+    fields:
+    - name: type
+      label: Loại công bố
+      type: select
+      required: true
+      options:
+        values:
+        - label: Bài báo tạp chí
+          value: article
+        - label: Báo cáo / luận văn
+          value: report
+        - label: Thuyết trình / hội thảo
+          value: presentation
+    - name: year
+      label: Năm
+      type: string
+      required: true
+      pattern:
+        regex: ^[0-9]{4}$
+        message: Nhập năm gồm 4 chữ số.
+    - name: label
+      label: Nhãn hiển thị
+      type: string
+      required: true
+    - name: title
+      label: Tiêu đề
+      type: string
+      required: true
+    - name: authors
+      label: Tác giả
+      type: string
+      required: true
+    - name: source
+      label: Tạp chí / đơn vị / hội thảo
+      type: string
+      required: true
+    - name: url
+      label: Đường dẫn chính thức / DOI (HTTPS)
+      type: string
+      required: false
+      pattern:
+        regex: ^(?:https://[^\s<>"\\]+)?$
+        message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
+    - name: pdf
+      label: Đường dẫn PDF công khai (HTTPS, không bắt buộc)
+      type: string
+      required: false
+      pattern:
+        regex: ^(?:https://[^\s<>"\\]+)?$
+        message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
+  - name: education
+    label: Học vấn
+    type: object
+    list:
+      min: 0
+      max: 200
+      collapsible:
+        collapsed: true
+        summary: '{fields.title}'
+    fields:
+    - name: period
+      label: Thời gian
+      type: string
+      required: true
+    - name: title
+      label: Tiêu đề
+      type: string
+      required: true
+    - name: institution
+      label: Trường / cơ quan
+      type: string
+      required: true
+    - name: note
+      label: Ghi chú
+      type: text
+      required: false
+    - name: status
+      label: Trạng thái
+      type: string
+      required: false
+  - name: languages
+    label: Ngôn ngữ
+    type: object
+    list:
+      min: 0
+      max: 200
+      collapsible:
+        collapsed: true
+        summary: '{fields.name}'
+    fields:
+    - name: name
+      label: Họ tên
+      type: string
+      required: true
+    - name: detail
+      label: Chi tiết
+      type: string
+      required: true
+  - name: experience
+    label: Kinh nghiệm & giải thưởng
+    type: object
+    list:
+      min: 0
+      max: 200
+      collapsible:
+        collapsed: true
+        summary: '{fields.title}'
+    fields:
+    - name: period
+      label: Thời gian
+      type: string
+      required: true
+    - name: title
+      label: Tiêu đề
+      type: string
+      required: true
+    - name: description
+      label: Mô tả
+      type: text
+      required: true
+  - name: contact
+    label: Liên hệ
+    type: object
+    fields:
+    - name: email
+      label: Email
+      type: string
+      required: true
+      pattern:
+        regex: ^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$
+        message: Nhập email hợp lệ.
+    - name: description
+      label: Mô tả
+      type: text
+      required: true
+    - name: facebook
+      label: Facebook
+      type: string
+      required: false
+      pattern:
+        regex: ^(?:https://[^\s<>"\\]+)?$
+        message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
+    - name: instagram
+      label: Instagram
+      type: string
+      required: false
+      pattern:
+        regex: ^(?:https://[^\s<>"\\]+)?$
+        message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
+    - name: linkedin
+      label: LinkedIn
+      type: string
+      required: false
+      pattern:
+        regex: ^(?:https://[^\s<>"\\]+)?$
+        message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
+settings:
+  config: false

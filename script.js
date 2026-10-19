@@ -17,7 +17,9 @@ document.addEventListener('keydown', event => {
     menu.focus();
   }
 });
-document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => {
+document.addEventListener('click', event => {
+  const button = event.target.closest('.filter');
+  if (!button) return;
   document.querySelectorAll('.filter').forEach(item => {
     const active = item === button;
     item.classList.toggle('active', active);
@@ -26,4 +28,4 @@ document.querySelectorAll('.filter').forEach(button => button.addEventListener('
   document.querySelectorAll('.publication').forEach(item => {
     item.hidden = button.dataset.filter !== 'all' && item.dataset.type !== button.dataset.filter;
   });
-}));
+});

@@ -15,3 +15,7 @@ Publish this directory with any static hosting service, including GitHub Pages. 
 Edit `index.html` for content, `styles.css` for design, and `script.js` for navigation and publication filtering. Replace `assets/Hoang-Thi-Ngoc-Huyen-CV.pdf` when updating the CV. Images, fonts, and assets are local; no external service is needed.
 
 Dates follow the supplied CV. It lists the M.A. under 2023 and the thesis under 2025; confirm these dates before publication. The 2026 AALSE presentation is marked accepted, as stated in the CV. Publication titles are not external links because the CV does not supply verified URLs.
+
+## Content administration
+
+Visit `/admin/` for the Pages CMS setup portal. The owner must authorize the GitHub app for this repository before editing. See [admin and security guide](docs/ADMIN.md). Normal edits are stored in `content/site.json`; `index.html` is the original fallback snapshot. This uses a third-party hosted CMS; authenticated editing has to be verified after owner authorization.

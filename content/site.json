@@ -1,0 +1,172 @@
+{
+  "profile": {
+    "name": "Hoang Thi Ngoc Huyen ",
+    "role": "PHD STUDENT · AGRICULTURAL ECONOMICS",
+    "tagline": "Understanding mobility.\nConnecting communities.",
+    "description": "Exploring the human side of migration, rural life, and belonging — across Vietnam and Korea.",
+    "university": "Jeonbuk National University",
+    "location": "Jeonju, Republic of Korea",
+    "portrait": "assets/portrait.png",
+    "portraitCaption": "A Vietnamese perspective.\nA cross-cultural lens.",
+    "portraitNote": "Grounded in communities.\nCurious about connections.",
+    "cv": "assets/Hoang-Thi-Ngoc-Huyen-CV.pdf"
+  },
+  "about": {
+    "lead": "I am a doctoral researcher in Agricultural Economics at Jeonbuk National University, interested in how people move, adapt, and build a sense of belonging.",
+    "paragraphs": [
+      "My work focuses on foreign seasonal workers and their relationships with rural communities in the Republic of Korea. With a background in Korean Studies and Agricultural Economics, I bring a cross-cultural perspective to questions of labor mobility, rural transformation, and agricultural cooperation.",
+      "I combine field-based and mixed-method research — from interviews and participant observation to survey design, quantitative analysis, and structural equation modeling."
+    ],
+    "tags": [
+      "Field-based research",
+      "Mixed methods",
+      "Vietnam–Korea"
+    ]
+  },
+  "research": [
+    {
+      "title": "Migration & labor mobility",
+      "description": "International migration, foreign seasonal workers, and the policies shaping agricultural labor mobility.",
+      "label": "MOVEMENT & OPPORTUNITY"
+    },
+    {
+      "title": "Community & belonging",
+      "description": "Social support, mutual adjustment, and relationships between migrant workers and local residents.",
+      "label": "CONNECTION & INTEGRATION"
+    },
+    {
+      "title": "Rural futures & cooperation",
+      "description": "Rural development, agricultural transformation, and locally grounded cooperation in Southeast Asia and Korea.",
+      "label": "PLACE & POSSIBILITY"
+    }
+  ],
+  "project": {
+    "label": "SELECTED PROJECT · 2025",
+    "title": "What helps seasonal workers feel at home?",
+    "description": "Co-researcher, Daesan Rural Foundation: Factors Affecting Seasonal Workers’ Adaptation to Rural Life, focusing on relationships with local residents.",
+    "url": ""
+  },
+  "publications": [
+    {
+      "type": "article",
+      "year": "2025",
+      "label": "PEER-REVIEWED ARTICLE",
+      "title": "“Being With” Beyond Language and Culture: Seasonal Migrant Workers and Local Residents as (Quasi-)Family and Neighbors",
+      "authors": "Kim Jooyoung & Hoang Thi Ngoc Huyen",
+      "source": "Korean Cultural Anthropology, 58(3), 61–101.",
+      "url": "",
+      "pdf": ""
+    },
+    {
+      "type": "presentation",
+      "year": "2026",
+      "label": "CONFERENCE · ORAL PRESENTATION ACCEPTED",
+      "title": "The Two-Sided Integration: Social Support and Mutual Adjustment in Korea’s Seasonal Worker Program",
+      "authors": "Hoang Thi Ngoc Huyen, et al.",
+      "source": "Asian & Australasian Society of Labour Economics (AALSE)",
+      "url": "",
+      "pdf": ""
+    },
+    {
+      "type": "report",
+      "year": "2025",
+      "label": "RESEARCH REPORT",
+      "title": "Factors Affecting Seasonal Workers’ Adaptation to Rural Life: Focusing on Relationships with Local Residents",
+      "authors": "Kim Jooyoung & Hoang Thi Ngoc Huyen",
+      "source": "Daesan Rural Foundation",
+      "url": "",
+      "pdf": ""
+    },
+    {
+      "type": "report",
+      "year": "2024",
+      "label": "RESEARCH REPORT · PRINCIPAL INVESTIGATOR",
+      "title": "Perceptions of Foreign Workers Participating in the Seasonal Worker Program: A Case Study of Jeonbuk Special Self-Governing Province",
+      "authors": "Hoang Thi Ngoc Huyen",
+      "source": "Jeonbuk Labor Policy Research Institute",
+      "url": "",
+      "pdf": ""
+    },
+    {
+      "type": "report",
+      "year": "2025",
+      "label": "MASTER’S THESIS",
+      "title": "A Study on Perception and Policy of Seasonal Workers: Focusing on Vietnamese Seasonal Workers",
+      "authors": "Hoang Thi Ngoc Huyen",
+      "source": "Jeonbuk National University",
+      "url": "",
+      "pdf": ""
+    },
+    {
+      "type": "presentation",
+      "year": "2024",
+      "label": "CONFERENCE PRESENTATION",
+      "title": "Perceptions of Foreign Workers Participating in the Seasonal Worker Program: Focusing on Vietnamese Seasonal Workers in the Jeonbuk Region",
+      "authors": "Hoang Thi Ngoc Huyen & Kim Su-Hyun",
+      "source": "Korean Agricultural Economics Association · Winter Conference",
+      "url": "",
+      "pdf": ""
+    }
+  ],
+  "education": [
+    {
+      "period": "2025 — PRESENT",
+      "title": "Ph.D. in Agricultural Economics",
+      "institution": "Jeonbuk National University · Republic of Korea",
+      "note": "",
+      "status": "In progress"
+    },
+    {
+      "period": "2023",
+      "title": "M.A. in Agricultural Economics",
+      "institution": "Jeonbuk National University · Republic of Korea",
+      "note": "Research on foreign seasonal workers and institutional dimensions of Korean agriculture.",
+      "status": ""
+    },
+    {
+      "period": "2022",
+      "title": "B.A. in Korean Language & Literature",
+      "institution": "Jeonbuk National University · Republic of Korea",
+      "note": "Transferred from Hue University of Foreign Language, Vietnam, from the third year.",
+      "status": ""
+    }
+  ],
+  "languages": [
+    {
+      "name": "Vietnamese",
+      "detail": "Nationality: Vietnamese"
+    },
+    {
+      "name": "Korean",
+      "detail": "TOPIK Level 6"
+    },
+    {
+      "name": "English",
+      "detail": "TOEIC 820"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2024 — PRESENT",
+      "title": "Academic collaboration",
+      "description": "Research assistant for the Vinh University veterinary medicine and livestock capacity-building project, supporting interpretation and coordination for Vietnamese professors in Korea."
+    },
+    {
+      "period": "2021 — 2025",
+      "title": "Community engagement",
+      "description": "Volunteer at Jeonju Immigration Office, assisting foreign residents with visitor guidance and administrative inquiries."
+    },
+    {
+      "period": "RECOGNITION",
+      "title": "Finding my voice",
+      "description": "Encouragement Award, JBNU 3-Minute Thesis Competition (2026). Grand Prize, JBNU Korean Speech Contest (2023)."
+    }
+  ],
+  "contact": {
+    "email": "Ngochuyen12061998@gmail.com",
+    "description": "For research conversations, academic collaboration, or shared interests in migration and rural communities.",
+    "facebook": "https://www.facebook.com/janh.hoang/",
+    "instagram": "https://www.instagram.com/min.min.00/",
+    "linkedin": "https://www.linkedin.com/in/hoang-ngoc-huyen-8921a6321/"
+  }
+}
