@@ -12,7 +12,7 @@ Publish this directory with any static hosting service, including GitHub Pages. 
 
 ## Update
 
-Edit `index.html` for content, `styles.css` for design, and `script.js` for navigation and publication filtering. Replace `assets/Hoang-Thi-Ngoc-Huyen-CV.pdf` when updating the CV. Images, fonts, and assets are local; no external service is needed.
+Edit `index.html` for content, `styles.css` for design, and `script.js` for navigation and publication filtering. Replace `assets/Hoang-Thi-Ngoc-Huyen-CV-public.pdf` when updating the CV. Images, fonts, and assets are local; no external service is needed.
 
 Dates follow the supplied CV. It lists the M.A. under 2023 and the thesis under 2025; confirm these dates before publication. The 2026 AALSE presentation is marked accepted, as stated in the CV. Publication titles are not external links because the CV does not supply verified URLs.
 
