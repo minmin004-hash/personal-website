@@ -37,6 +37,7 @@
     const about = record(data.about, 'about', ['lead']);
     about.paragraphs = list(data.about.paragraphs, 'paragraphs', (v,n) => text(v,n));
     about.tags = list(data.about.tags, 'tags', (v,n) => text(v,n));
+    const interests = list(data.interests,'interests',(v,n) => text(v,n));
     const research = list(data.research,'research',(v,n) => record(v,n,['title','description','label']));
     const project = record(data.project,'project',['label','title','description']);
     project.url = https(data.project.url,'project URL');
@@ -51,7 +52,7 @@
     const contact = record(data.contact,'contact',['email','description']);
     if (!/^[A-Za-z0-9.!#$%&'*+\/=\?^_`{|}~-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/.test(contact.email)) throw new Error('Invalid email');
     ['facebook','instagram','linkedin'].forEach(k => {contact[k] = https(data.contact[k],k);});
-    return {profile,about,research,project,publications,education,languages,experience,contact};
+    return {profile,about,interests,research,project,publications,education,languages,experience,contact};
   }
   const node = (tag, className, value) => {
     const el = document.createElement(tag);
@@ -71,6 +72,8 @@
     const main = original.cloneNode(true);
     const set = (selector,value) => {main.querySelector(selector).textContent = value;};
     const {profile:p,about:a,contact:c} = data;
+    const interests=main.querySelector('.research-interests ul');interests.replaceChildren();
+    data.interests.forEach(v=>interests.append(node('li','',v)));
     const name = main.querySelector('h1'); name.textContent = p.name; name.append(node('span','accent','.'));
     const role = main.querySelector('.hero-copy .eyebrow');role.replaceChildren(node('span','status-dot'),document.createTextNode(p.role));
     set('.hero-tagline',p.tagline); set('.hero-description',p.description);

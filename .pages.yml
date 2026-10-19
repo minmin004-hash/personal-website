@@ -59,6 +59,14 @@ content:
       options:
         extensions:
         - pdf
+  - name: interests
+    label: Research Interest — Các hướng nghiên cứu
+    type: string
+    list:
+      min: 0
+      max: 200
+      collapsible: false
+    required: true
   - name: about
     label: Giới thiệu
     type: object
