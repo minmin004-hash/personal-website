@@ -10,3 +10,5 @@
 .hero-copy h1{max-width:520px}.hero-tagline{white-space:pre-line}.publication-title:hover{text-decoration:underline;text-underline-offset:4px}.publication-pdf{display:inline-block;margin-top:10px}.current-project .publication-title{font-size:inherit}.experience-grid,.research-grid{align-items:stretch}
 
 footer .admin-link{font-size:9px;color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+
+.portrait-affiliation{margin-top:18px;text-align:center}.portrait-affiliation p{margin:0}.portrait-position{font-size:13px;font-weight:500;line-height:1.6}.portrait-affiliation .portrait-location{font-size:11px;color:var(--muted);margin-top:4px}

@@ -74,7 +74,8 @@
     const name = main.querySelector('h1'); name.textContent = p.name; name.append(node('span','accent','.'));
     const role = main.querySelector('.hero-copy .eyebrow');role.replaceChildren(node('span','status-dot'),document.createTextNode(p.role));
     set('.hero-tagline',p.tagline); set('.hero-description',p.description);
-    const aff = main.querySelector('.affiliation div');aff.textContent=p.university;aff.append(node('span','',p.location));
+    set('.portrait-position','PhD Student, '+p.university);
+    set('.portrait-location',p.location);
     const portrait=main.querySelector('.portrait-frame img');portrait.src=p.portrait;portrait.alt='Portrait of '+p.name;
     main.querySelectorAll('a[download], #publications .section-top > a').forEach(el=>{el.href=p.cv;});
     const about=main.querySelector('.about-copy');about.replaceChildren(node('p','lead',a.lead));
