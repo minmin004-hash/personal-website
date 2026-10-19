@@ -41,4 +41,4 @@ Revoke Pages CMS access in GitHub Settings → Applications / Installations if s
 
 Run `npm test` with Node.js, Python 3, Playwright and Chromium available. The test starts a temporary local server, verifies desktop/mobile content, filtering, publication links, safe rendering of script payloads, rejection of unsafe URLs and asset traversal, fallback behavior, and portal CSP. It does not test hosted CMS authentication or app permissions.
 
-CMS configuration was accepted by the official Pages CMS ConfigSchema at upstream commit `6f4e860a35d934406580287e7042e5e111e207a1`. All 118 current content-field instances were checked, including blank optional links. The browser suite passed 23 checks. Owner activation remains required; service behavior may evolve.
+CMS configuration was accepted by the official Pages CMS ConfigSchema at upstream commit `6f4e860a35d934406580287e7042e5e111e207a1`. All 116 current content-field instances were checked, including blank optional links. The browser suite passed 23 checks. Owner activation remains required; service behavior may evolve.

@@ -31,7 +31,7 @@
     return result;
   };
   function validate(data) {
-    const profile = record(data.profile, 'profile', ['name','role','tagline','description','university','location','portraitCaption','portraitNote']);
+    const profile = record(data.profile, 'profile', ['name','role','tagline','description','university','location']);
     profile.portrait = asset(data.profile.portrait, 'portrait', ['png','jpg','jpeg','webp']);
     profile.cv = asset(data.profile.cv, 'CV', ['pdf']);
     const about = record(data.about, 'about', ['lead']);
@@ -76,7 +76,6 @@
     set('.hero-tagline',p.tagline); set('.hero-description',p.description);
     const aff = main.querySelector('.affiliation div');aff.textContent=p.university;aff.append(node('span','',p.location));
     const portrait=main.querySelector('.portrait-frame img');portrait.src=p.portrait;portrait.alt='Portrait of '+p.name;
-    set('.portrait-label',p.portraitCaption);set('.portrait-note p',p.portraitNote);
     main.querySelectorAll('a[download], #publications .section-top > a').forEach(el=>{el.href=p.cv;});
     const about=main.querySelector('.about-copy');about.replaceChildren(node('p','lead',a.lead));
     a.paragraphs.forEach(v=>about.append(node('p','',v)));

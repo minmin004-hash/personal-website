@@ -52,14 +52,6 @@ content:
         - jpg
         - jpeg
         - webp
-    - name: portraitCaption
-      label: Chú thích ảnh
-      type: text
-      required: true
-    - name: portraitNote
-      label: Ghi chú bên dưới ảnh
-      type: text
-      required: true
     - name: cv
       label: Tệp CV
       type: file
