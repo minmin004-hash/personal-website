@@ -42,3 +42,7 @@ Revoke Pages CMS access in GitHub Settings → Applications / Installations if s
 Run `npm test` with Node.js, Python 3, Playwright and Chromium available. The test starts a temporary local server, verifies desktop/mobile content, filtering, publication links, safe rendering of script payloads, rejection of unsafe URLs and asset traversal, fallback behavior, and portal CSP. It does not test hosted CMS authentication or app permissions.
 
 CMS configuration was accepted by the official Pages CMS ConfigSchema at upstream commit `6f4e860a35d934406580287e7042e5e111e207a1`. All 117 current content-field instances were checked, including blank optional links. The browser suite passed 23 checks. Owner activation remains required; service behavior may evolve.
+
+## Add a link to each publication
+
+Open Pages CMS → **Nội dung website** → **Công bố khoa học**. Expand a publication by its title, then fill **Link bài báo / báo cáo / luận văn** with its official HTTPS URL or full DOI URL (`https://doi.org/...`). Optionally fill **Link đọc PDF / tài liệu** with a public HTTPS PDF/document link. Save to main and wait for Pages deployment. The title and View article / View report / thesis button use the first link; Read PDF uses the second. Both open in new tabs. Empty link fields produce no buttons. Do this independently for each existing or new publication, and select the appropriate publication type. No example URLs are published as real research links.

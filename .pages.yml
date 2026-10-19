@@ -174,19 +174,28 @@ content:
       type: string
       required: true
     - name: url
-      label: Đường dẫn chính thức / DOI (HTTPS)
+      label: Link bài báo / báo cáo / luận văn (không bắt buộc)
       type: string
       required: false
       pattern:
         regex: ^(?:https://[^\s<>"\\]+)?$
         message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
+      description: 'Dán đường dẫn đầy đủ bắt đầu bằng https:// đến trang bài báo,
+        báo cáo, thư viện hoặc DOI. Ví dụ: https://doi.org/10.xxxx/xxxxx. Website
+        sẽ gắn link vào tiêu đề và hiển thị nút mở bài. Để trống nếu chưa có.'
     - name: pdf
-      label: Đường dẫn PDF công khai (HTTPS, không bắt buộc)
+      label: Link đọc PDF / tài liệu (không bắt buộc)
       type: string
       required: false
       pattern:
         regex: ^(?:https://[^\s<>"\\]+)?$
         message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
+      description: Dán đường dẫn HTTPS đến PDF hoặc trang chia sẻ tài liệu. Nếu dùng
+        Google Drive, đặt quyền xem phù hợp trước khi chia sẻ. Chỉ thêm tài liệu bạn
+        có quyền công bố. Để trống sẽ không hiển thị nút PDF.
+    description: Mở từng công bố để sửa thông tin và thêm liên kết riêng. Bấm thêm
+      mục để tạo bài báo, báo cáo hoặc luận văn mới. Thứ tự trong danh sách là thứ
+      tự trên website.
   - name: education
     label: Học vấn
     type: object

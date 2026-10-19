@@ -93,7 +93,15 @@
       const el=node('article','publication');el.dataset.type=v.type;
       const body=node('div');const title=node('h3');title.append(v.url ? link(v.title+' ↗',v.url,'publication-title') : document.createTextNode(v.title));
       body.append(node('span','eyebrow',v.label),title,node('p','',v.authors),node('p','pub-source',v.source));
-      if(v.pdf)body.append(link('Read PDF ↗',v.pdf,'text-link publication-pdf'));
+      if(v.url || v.pdf){
+        const actions=node('div','publication-links');
+        if(v.url){
+          const label={article:'View article ↗',report:'View report / thesis ↗',presentation:'View presentation ↗'}[v.type];
+          actions.append(link(label,v.url,'text-link publication-source'));
+        }
+        if(v.pdf)actions.append(link('Read PDF ↗',v.pdf,'text-link publication-pdf'));
+        body.append(actions);
+      }
       el.append(node('span','pub-year',v.year),body);publications.append(el);
     });
     if(!data.publications.length)publications.append(node('p','', 'Publications will be added here.'));
