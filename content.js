@@ -79,7 +79,7 @@
     const {profile:p,about:a,contact:c} = data;
     const interests=main.querySelector('.research-interests ul');interests.replaceChildren();
     data.interests.forEach(v=>interests.append(node('li','',v)));
-    const name = main.querySelector('h1'); name.textContent = p.name; name.append(node('span','accent','.'));
+    const name = main.querySelector('h1'); name.textContent = p.name.trim(); name.append(node('span','accent','.'));
     const role = main.querySelector('.hero-copy .eyebrow');role.replaceChildren(node('span','status-dot'),document.createTextNode(p.role));
     set('.hero-tagline',p.tagline); set('.hero-description',p.description);
     set('.portrait-position','PhD Student, '+p.university);
@@ -120,6 +120,10 @@
     const socials=main.querySelector('.social-links');socials.replaceChildren();
     [['facebook','Facebook'],['instagram','Instagram'],['linkedin','LinkedIn']].forEach(([k,label])=>{if(c[k])socials.append(link(label+' ↗',c[k]));});
     set('.contact-bottom > span',p.location.toUpperCase());
+    const sidebarEmail=main.querySelector('.sidebar-email');sidebarEmail.textContent=c.email;sidebarEmail.href='mailto:'+c.email;
+    set('.sidebar-location',p.location);
+    const sidebarSocials=main.querySelector('.sidebar-socials');sidebarSocials.replaceChildren();
+    [['facebook','Facebook'],['instagram','Instagram'],['linkedin','LinkedIn']].forEach(([key,label])=>{if(c[key])sidebarSocials.append(link(label,c[key]));});
     original.replaceWith(main);
     document.title=p.name+' · Researcher';
     document.querySelector('meta[name="description"]').content=p.description;
@@ -127,6 +131,6 @@
   }
   fetch('content/site.json',{cache:'no-cache',credentials:'omit'})
     .then(response=>{if(!response.ok)throw new Error('Content unavailable');return response.json();})
-    .then(data=>{render(validate(data));document.documentElement.dataset.contentStatus='loaded';})
+    .then(data=>{render(validate(data));document.documentElement.dataset.contentStatus='loaded';document.dispatchEvent(new Event('content:updated'));})
     .catch(()=>{document.documentElement.dataset.contentStatus='fallback';console.warn('Content could not be loaded safely; showing the saved website version.');});
 })();

@@ -19,3 +19,7 @@ Dates follow the supplied CV. It lists the M.A. under 2023 and the thesis under 
 ## Content administration
 
 Visit `/admin/` for the Pages CMS setup portal. The owner must authorize the GitHub app for this repository before editing. See [admin and security guide](docs/ADMIN.md). Normal edits are stored in `content/site.json`; `index.html` is the original fallback snapshot. This uses a third-party hosted CMS; authenticated editing has to be verified after owner authorization.
+
+## Design
+
+Dark card-based academic portfolio inspired by [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio). The upstream MIT notice is retained at `licenses/vcard-MIT.txt`. Navigation uses hash-linked sections (About, Research, Publications, Journey, Contact), with all content readable when JavaScript is disabled. No external fonts, scripts or trackers are required. CMS fields and existing content are preserved.

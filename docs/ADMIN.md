@@ -41,7 +41,7 @@ Revoke Pages CMS access in GitHub Settings → Applications / Installations if s
 
 Run `npm test` with Node.js, Python 3, Playwright and Chromium available. The test starts a temporary local server, verifies desktop/mobile content, filtering, publication links, safe rendering of script payloads, rejection of unsafe URLs and asset traversal, fallback behavior, and portal CSP. It does not test hosted CMS authentication or app permissions.
 
-CMS configuration was accepted by the official Pages CMS ConfigSchema at upstream commit `6f4e860a35d934406580287e7042e5e111e207a1`. All 117 current content-field instances were checked, including blank optional links. The browser suite passed 23 checks. Owner activation remains required; service behavior may evolve.
+CMS configuration was accepted by the official Pages CMS ConfigSchema at upstream commit `6f4e860a35d934406580287e7042e5e111e207a1`. All 117 current content-field instances were checked, including blank optional links. The browser suite passed 24 checks. Owner activation remains required; service behavior may evolve.
 
 ## Add a link to each publication
 
@@ -50,3 +50,7 @@ Open Pages CMS → **Nội dung website** → **Công bố khoa học**. Expand 
 ## Stale CMS configuration / deleted fields still required
 
 The hosted service caches parsed `.pages.yml` independently of the browser. A browser refresh alone may not refresh the server-side schema. Back up unsaved editorial changes before navigating. Open `https://app.pagescms.org/minmin004-hash/personal-website/main/configuration`; this editor reads `.pages.yml` directly from GitHub. Verify it no longer includes `portraitCaption`/`portraitNote`, then Save the current configuration without editing it. The settings-save handler updates the CMS configuration cache. Reopen the content form and reload before entering the backed-up changes again. No placeholder captions are required. Configuration and Cache screens are enabled for future maintenance; Configuration cache → Refresh cache explicitly refetches and revalidates the GitHub config. A stale older schema may hide Cache until configuration is synchronized once. This repair needs the owner's authenticated session; do not claim the actual hosted form was repaired until confirmed there.
+
+## vCard-inspired presentation
+
+The public layout now uses a dark profile sidebar and hash-linked About, Research, Publications, Journey and Contact panels. CMS data fields, media paths and authentication are unchanged. Profile email/SNS and CV are shown in the sidebar as well as the appropriate content panels. The public browser suite verifies CMS rendering and security behavior; separate layout checks cover hash navigation, history, 320–1440px widths and JavaScript-disabled readability.
