@@ -37,7 +37,12 @@
     const about = record(data.about, 'about', ['lead']);
     about.paragraphs = list(data.about.paragraphs, 'paragraphs', (v,n) => text(v,n));
     about.tags = list(data.about.tags, 'tags', (v,n) => text(v,n));
-    const interests = list(data.interests,'interests',(v,n) => text(v,n));
+    // Older CMS forms may omit newly added fields when saving the whole JSON file.
+    // Preserve the saved interest list in that case; an explicit [] still clears it.
+    const interestValues = data.interests === undefined
+      ? Array.from(document.querySelectorAll('.research-interests li'), el => el.textContent)
+      : data.interests;
+    const interests = list(interestValues,'interests',(v,n) => text(v,n));
     const research = list(data.research,'research',(v,n) => record(v,n,['title','description','label']));
     const project = record(data.project,'project',['label','title','description']);
     project.url = https(data.project.url,'project URL');
