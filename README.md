@@ -22,4 +22,4 @@ Visit `/admin/` for the Pages CMS setup portal. The owner must authorize the Git
 
 ## Design
 
-Dark card-based academic portfolio inspired by [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio). The upstream MIT notice is retained at `licenses/vcard-MIT.txt`. Navigation uses hash-linked sections (About, Research, Publications, Journey, Contact), with all content readable when JavaScript is disabled. No external fonts, scripts or trackers are required. CMS fields and existing content are preserved.
+Light card-based academic portfolio inspired by [vCard by codewithsadee](https://github.com/codewithsadee/vcard-personal-portfolio). The upstream MIT notice is retained at `licenses/vcard-MIT.txt`. Navigation uses hash-linked sections (About, Research, Publications, Journey, Contact), with all content readable when JavaScript is disabled. No external fonts, scripts or trackers are required. CMS fields and existing content are preserved.

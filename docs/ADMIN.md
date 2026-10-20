@@ -53,4 +53,4 @@ The hosted service caches parsed `.pages.yml` independently of the browser. A br
 
 ## vCard-inspired presentation
 
-The public layout now uses a dark profile sidebar and hash-linked About, Research, Publications, Journey and Contact panels. CMS data fields, media paths and authentication are unchanged. Profile email/SNS and CV are shown in the sidebar as well as the appropriate content panels. The public browser suite verifies CMS rendering and security behavior; separate layout checks cover hash navigation, history, 320–1440px widths and JavaScript-disabled readability.
+The public layout now uses a light profile sidebar and hash-linked About, Research, Publications, Journey and Contact panels. CMS data fields, media paths and authentication are unchanged. Profile email/SNS and CV are shown in the sidebar as well as the appropriate content panels. The public browser suite verifies CMS rendering and security behavior; separate layout checks cover hash navigation, history, 320–1440px widths and JavaScript-disabled readability.
