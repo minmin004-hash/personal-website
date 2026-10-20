@@ -303,4 +303,5 @@ content:
         regex: ^(?:https://[^\s<>"\\]+)?$
         message: Nhập đường dẫn HTTPS hợp lệ, hoặc để trống.
 settings:
-  config: false
+  config: true
+  cache: true
