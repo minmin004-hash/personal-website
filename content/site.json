@@ -7,6 +7,8 @@
     "university": "Jeonbuk National University",
     "location": "Jeonju, Republic of Korea",
     "portrait": "assets/portrait.png",
+    "portraitCaption": " ",
+    "portraitNote": " ",
     "cv": "assets/Hoang-Thi-Ngoc-Huyen-CV-public.pdf"
   },
   "about": {
@@ -46,14 +48,6 @@
   },
   "publications": [
     {
-      "type": "article",
-      "year": "2025",
-      "label": "PEER-REVIEWED ARTICLE",
-      "title": "“Being With” Beyond Language and Culture: Seasonal Migrant Workers and Local Residents as (Quasi-)Family and Neighbors",
-      "authors": "Kim Jooyoung & Hoang Thi Ngoc Huyen",
-      "source": "Korean Cultural Anthropology, 58(3), 61–101."
-    },
-    {
       "type": "presentation",
       "year": "2026",
       "label": "CONFERENCE · ORAL PRESENTATION ACCEPTED",
@@ -62,20 +56,22 @@
       "source": "Asian & Australasian Society of Labour Economics (AALSE)"
     },
     {
+      "type": "article",
+      "year": "2025",
+      "label": "PEER-REVIEWED ARTICLE",
+      "title": "“Being With” Beyond Language and Culture: Seasonal Migrant Workers and Local Residents as (Quasi-)Family and Neighbors",
+      "authors": "Kim Jooyoung & Hoang Thi Ngoc Huyen",
+      "source": "Korean Cultural Anthropology, 58(3), 61–101.",
+      "url": "https://kiss.kstudy.com/Detail/Ar?key=4210982"
+    },
+    {
       "type": "report",
       "year": "2025",
       "label": "RESEARCH REPORT",
       "title": "Factors Affecting Seasonal Workers’ Adaptation to Rural Life: Focusing on Relationships with Local Residents",
       "authors": "Kim Jooyoung & Hoang Thi Ngoc Huyen",
-      "source": "Daesan Rural Foundation"
-    },
-    {
-      "type": "report",
-      "year": "2024",
-      "label": "RESEARCH REPORT · PRINCIPAL INVESTIGATOR",
-      "title": "Perceptions of Foreign Workers Participating in the Seasonal Worker Program: A Case Study of Jeonbuk Special Self-Governing Province",
-      "authors": "Hoang Thi Ngoc Huyen",
-      "source": "Jeonbuk Labor Policy Research Institute"
+      "source": "Daesan Rural Foundation",
+      "url": "https://www.dsa.or.kr/data.html?html=&Table=ins_bbs12&cate_code=248"
     },
     {
       "type": "report",
@@ -83,7 +79,17 @@
       "label": "MASTER’S THESIS",
       "title": "A Study on Perception and Policy of Seasonal Workers: Focusing on Vietnamese Seasonal Workers",
       "authors": "Hoang Thi Ngoc Huyen",
-      "source": "Jeonbuk National University"
+      "source": "Jeonbuk National University",
+      "url": "https://www.riss.kr/search/detail/DetailView.do?p_mat_type=be54d9b8bc7cdb09&control_no=ecb987a6358f1bf5ffe0bdc3ef48d419&keyword=%ED%99%A9%ED%8B%B0%EC%9D%91%EC%98%A5%ED%9B%84%EC%98%8C"
+    },
+    {
+      "type": "report",
+      "year": "2024",
+      "label": "RESEARCH REPORT · PRINCIPAL INVESTIGATOR",
+      "title": "Perceptions of Foreign Workers Participating in the Seasonal Worker Program: A Case Study of Jeonbuk Special Self-Governing Province",
+      "authors": "Hoang Thi Ngoc Huyen",
+      "source": "Jeonbuk Labor Policy Research Institute",
+      "url": "https://www.jbli.re.kr/archive/6945"
     },
     {
       "type": "presentation",
@@ -91,7 +97,8 @@
       "label": "CONFERENCE PRESENTATION",
       "title": "Perceptions of Foreign Workers Participating in the Seasonal Worker Program: Focusing on Vietnamese Seasonal Workers in the Jeonbuk Region",
       "authors": "Hoang Thi Ngoc Huyen & Kim Su-Hyun",
-      "source": "Korean Agricultural Economics Association · Winter Conference"
+      "source": "Korean Agricultural Economics Association · Winter Conference",
+      "url": "https://www.kaea1957.org/events/articles?mode=view&seqidx=1355"
     }
   ],
   "education": [
@@ -105,7 +112,7 @@
       "period": "2023",
       "title": "M.A. in Agricultural Economics",
       "institution": "Jeonbuk National University · Republic of Korea",
-      "note": "Research on foreign seasonal workers and institutional dimensions of Korean agriculture."
+      "note": "Research on Perception and Policy of Seasonal Workers : Focusing on Vietnamese Seasonal Workers"
     },
     {
       "period": "2022",
@@ -130,14 +137,14 @@
   ],
   "experience": [
     {
-      "period": "2024 — PRESENT",
-      "title": "Academic collaboration",
-      "description": "Research assistant for the Vinh University veterinary medicine and livestock capacity-building project, supporting interpretation and coordination for Vietnamese professors in Korea."
-    },
-    {
       "period": "2021 — 2025",
       "title": "Community engagement",
       "description": "Volunteer at Jeonju Immigration Office, assisting foreign residents with visitor guidance and administrative inquiries."
+    },
+    {
+      "period": "2024 — PRESENT",
+      "title": "Academic collaboration",
+      "description": "Research assistant for the Vinh University veterinary medicine and livestock capacity-building project, supporting interpretation and coordination for Vietnamese professors in Korea."
     },
     {
       "period": "RECOGNITION",
@@ -147,16 +154,9 @@
   ],
   "contact": {
     "email": "minmin0612@jbnu.ac.kr",
-    "description": "For research conversations, academic collaboration, or shared interests in migration and rural communities.",
+    "description": "For research conversations, academic collaboration, or shared interests in International Migration and Labor Mobility",
     "facebook": "https://www.facebook.com/janh.hoang/",
     "instagram": "https://www.instagram.com/min.min.00/",
     "linkedin": "https://www.linkedin.com/in/hoang-ngoc-huyen-8921a6321/"
-  },
-  "interests": [
-    "International Migration and Labor Mobility",
-    "Foreign Seasonal Workers",
-    "Rural Communities and Social Integration",
-    "Agricultural and Rural Development",
-    "Migration Governance and Rural Labor Policy"
-  ]
+  }
 }
